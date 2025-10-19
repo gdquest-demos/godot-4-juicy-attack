@@ -37,7 +37,7 @@ jobs:
           body: |
             To explore the demo, download the zip file below and import it in Godot.
 
-            Head to the GDQuest Free Library for a detailed guide to get you started with saving and loading in Godot: [Saving and loading games in Godot 4 (with resources)](https://gdquest.com/library/save_game_godot4/)
+            Head to the GDQuest Free Library for a detailed guide about juicing your game attacks: [Juicing up your game attacks](https://gdquest.com/library/juicy_attack/)
           draft: false
           prerelease: false
           files: ${{ steps.repo_info.outputs.repo_name }}.zip
