@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-signal hit
 
 var _pushback_force := Vector2.ZERO
 
@@ -15,7 +14,7 @@ func take_damage(amount: int) -> void:
 	label.global_position = _damage_spawning_point.global_position
 	add_child(label)
 	label.set_damage(amount)
-	hit.emit()
+	EventBus.enemy_hit.emit()
 
 
 func knock_back(source_position: Vector2) -> void:

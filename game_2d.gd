@@ -7,8 +7,7 @@ extends Node2D
 
 
 func _ready() -> void:
-	for scarecrow: CharacterBody2D in scarecrows.get_children():
-		scarecrow.hit.connect(freeze_engine)
+	EventBus.enemy_hit.connect(freeze_engine)
 
 
 func freeze_engine() -> void:
